@@ -3,36 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOS M SERVICIOS LTDA
-    </title>
+    <title>2M Servicios Generales</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlaza tu archivo CSS aquí -->
     <style>
-        /* Estilos CSS */
+        /* Estilos globales */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f0f0f0;
+            color: #333;
         }
+
+        /* Estilos del encabezado */
         header {
-            background-color: #333;
+            background-color: #2e86c1; /* Azul */
             color: #fff;
             padding: 20px;
             text-align: center;
         }
-        nav {
-            background-color: #444;
+
+        /* Estilos de la barra de navegación */
+        .navbar {
+            background-color: #4CAF50; /* Verde */
             color: #fff;
             padding: 10px;
             text-align: center;
         }
-        nav a {
+
+        .navbar a {
             color: #fff;
             text-decoration: none;
             margin: 0 10px;
         }
+
+        /* Estilos de las secciones */
         section {
             padding: 20px;
         }
+
+        /* Estilos de los botones */
+        button {
+            background-color: #2e86c1; /* Azul */
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1d5ca6; /* Azul más oscuro */
+        }
+
+        /* Estilos del pie de página */
         footer {
             background-color: #333;
             color: #fff;
@@ -45,20 +68,55 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>DOS M SERVICIOS LTDA</h1>
-    </header>
-    <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Acerca de</a>
-        <a href="#">Contacto</a>
-    </nav>
-    <section>
-        <h2>Contenido principal</h2>
-        <p>Bienvenido a mi página web. Esta es una página de ejemplo.</p>
-    </section>
-    <footer>
-        <p>Derechos de autor &copy; 2024 | Nombre de tu empresa</p>
-    </footer>
+
+<!-- Encabezado -->
+<header>
+    <h1>2M Servicios Generales</h1>
+</header>
+
+<!-- Barra de Navegación -->
+<nav class="navbar">
+    <a href="#">Inicio</a>
+    <a href="#">Servicios</a>
+    <a href="#">Acerca de</a>
+    <a href="#">Contacto</a>
+</nav>
+
+<!-- Sección de Servicios -->
+<section>
+    <h2>Nuestros Servicios</h2>
+    <p>Ofrecemos una amplia gama de servicios de limpieza para satisfacer tus necesidades. Desde limpieza regular hasta limpieza profunda, estamos aquí para ayudarte a mantener tus espacios impecables y saludables.</p>
+    <ul>
+        <li>Limpieza regular de hogares y oficinas</li>
+        <li>Limpieza profunda de alfombras y tapicería</li>
+        <li>Limpieza de ventanas y cristales</li>
+        <li>Limpieza de espacios comerciales</li>
+        <!-- Agrega más servicios según sea necesario -->
+    </ul>
+    <button>Contactar Ahora</button>
+</section>
+
+<!-- Sección de Contacto -->
+<section>
+    <h2>Contacto</h2>
+    <p>Para obtener más información sobre nuestros servicios o para solicitar un presupuesto, déjanos tus datos de contacto y nos pondremos en contacto contigo lo antes posible:</p>
+    <form action="enviar.php" method="POST"> <!-- Reemplaza "enviar.php" con el script que procesará el envío del correo -->
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br>
+        <label for="correo">Correo Electrónico:</label><br>
+        <input type="email" id="correo" name="correo" required><br>
+        <label for="telefono">Teléfono:</label><br>
+        <input type="tel" id="telefono" name="telefono"><br>
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<!-- Pie de Página -->
+<footer>
+    <p>&copy; 2024 2M Servicios Generales | Todos los derechos reservados</p>
+</footer>
+
 </body>
 </html>
